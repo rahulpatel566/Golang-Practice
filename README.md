@@ -1,6 +1,10 @@
 # Golang Practice
 
-## Day 1
+## Section 1:
+ 1. What Go offers, Go vs other languages
+ 2. Go installation
+ 3. Compiling and running first Go Program
+ 4. Go Programming Syntax
 
 ### Golang Features
 
@@ -85,4 +89,13 @@ Common commands:
 - go mod tidy
 
 In short: Go Modules manage dependencies in modern Go projects.
+
+## Section 2:
+ 1. Package, Variables and constants, Data types
+ 2. Functions
+ 3. If, if-else, switch, for
+ 4. Array
+ 5. Slice: underlying array, extract, append, spread, copy
+ 6. Maps
+ 7. String, byte, rune, utf-8 encoding
 
