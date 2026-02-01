@@ -42,3 +42,47 @@ go tool compile hello.go
 go tool link -o hello.exe hello.o
 
 ---
+
+### Go Modules and Packages
+
+Package Types:
+
+1. Standard packages  
+   Location: $GOROOT/src/
+
+2. User-defined packages (before Go 1.11)  
+   Location: $GOPATH/src/, $GOPATH/pkg/, $GOPATH/bin/
+
+3. Third-party packages  
+   Managed using Go Modules
+
+Go Modules (go mod):
+
+- Introduced in Go 1.11
+- Used to manage dependencies and versions
+- Works outside GOPATH
+- Recommended for user-defined and third-party packages
+
+Initialize a module:
+go mod init <module-name>
+
+
+## Go Modules (Very Short)
+
+`go mod init` initializes a Go module and creates a `go.mod` file.
+
+It enables:
+- Dependency management
+- Versioning
+- Working outside GOPATH
+
+Key files:
+- `go.mod` → module name, Go version, dependencies
+- `go.sum` → dependency checksums
+
+Common commands:
+- go mod init
+- go mod tidy
+
+In short: Go Modules manage dependencies in modern Go projects.
+
